@@ -1,97 +1,480 @@
 
-<header class="bg-primary text-center p-2">
- <strong> <h3 class="text-white">Angular</h3></strong>
-</header>
 
 <div class="container mt-5">
+  <header class="text-center bg-info p-3 text-white">
+  <h2>Space Cards</h2>
+</header>
+  <div class="row mt-3">
+    <div *ngFor="let space of spaceArr" class="col-md-4 mb-3">
+      <div class="card h-100">
+        <div class="card-header text-center bg-info text-white">
+          <h2>{{space.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{space.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <header class="text-center bg-success p-3 text-white">
+    <h2>world worldCuisinesArr</h2>
+  </header>
+
+
   <div class="row">
-    <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let skill of skills" class="list-group-item text-primary">I Like {{skill}}</li>
-    </ul>
+    <div *ngFor="let world of worldCuisinesArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-success text-white">
+          <h2>{{world.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{world.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+
+
+        </div>
+
+      </div>
+    </div>
   </div>
 
-   <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let flower of flowers" class="list-group-item text-success">I Like {{flower}}</li>
-    </ul>
-  </div>
-  <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let fruit of fruits" class="list-group-item text-danger">I eat {{fruit}}</li>
-    </ul>
-  </div>
-</div>
-<div class="row mt-5">
- <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let country of countries" class="list-group-item text-info">I wiil go to {{country}}</li>
-    </ul>
+
+  <header class="text-center bg-danger p-3 text-white mt-3">
+    <h2>mountainRanges</h2>
+  </header>
+  <div class="row">
+    <div *ngFor="let mountain of mountainRangesArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-danger text-white">
+          <h2>{{mountain.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{mountain.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
   </div>
 
- <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let movie of movies" class="list-group-item text-success">I will watch {{movie}}</li>
-    </ul>
+
+
+  <header class="text-center bg-dark p-3 text-white mt-3">
+    <h2>famousAuthors</h2>
+  </header>
+  <div class="row">
+    <div *ngFor="let famous of  famousAuthorsArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-dark text-white">
+          <h2>{{famous.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{famous.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
   </div>
 
- <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let language of languages" class="list-group-item text-danger">I like {{language}}</li>
-    </ul>
-  </div>
-</div>
 
-<div class="row mt-5">
- <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let city of cities" class="list-group-item text-info">I wiil go to {{city}}</li>
-    </ul>
-  </div>
 
- <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let animal of animals" class="list-group-item text-success">I like {{animal}}</li>
-    </ul>
-  </div>
 
- <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let day of days" class="list-group-item text-danger">{{day}}</li>
-    </ul>
-  </div>
-</div>
-<div class="row mt-5">
- <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let tool of tools" class="list-group-item text-info">{{tool}}</li>
-    </ul>
+<header class="text-center bg-warning p-3 text-white mt-3">
+    <h2>prehistoricalAnimals</h2>
+  </header>
+  <div class="row">
+    <div *ngFor="let animal of prehistoricAnimalsArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-warning text-white">
+          <h2>{{animal.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{animal.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
   </div>
 
- <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let month of months" class="list-group-item text-success"> {{month}}</li>
-    </ul>
+<header class="text-center bg-success p-3 text-white mt-3">
+    <h2>famousInventions</h2>
+  </header>
+  <div class="row">
+    <div *ngFor="let famous of famousInventionsArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-success text-white">
+          <h2>{{famous.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{famous.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
   </div>
 
- <div class="col-4">    
-    <ul class="list-group">
-      <li
-      *ngFor="let hobby of hobbies" class="list-group-item text-danger">{{hobby}}</li>
-    </ul>
+    <header class="text-center bg-secondary p-3 text-white mt-3">
+    <h2>moviesGenre</h2>
+  </header>
+  <div class="row">
+    <div *ngFor="let movie of movieGenresArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-secondary text-white">
+          <h2>{{movie.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{movie.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
   </div>
-</div>
+
+
+    <header class="text-center bg-danger p-3 text-white mt-3">
+    <h2>musicalGenres</h2>
+  </header>
+
+  <div class="row">
+    <div *ngFor="let music of musicalGenresArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-danger text-white">
+          <h2>{{music.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{music.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <header class="text-center bg-info p-3 text-white mt-3">
+    <h2>techInnovations</h2>
+  </header>
+
+  <div class="row">
+    <div *ngFor="let tech of techInnovationsArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-info text-white">
+          <h2>{{tech.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{tech.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+<header class="text-center bg-success p-3 text-white mt-3">
+    <h2>famousRivers</h2>
+  </header>
+
+  <div class="row">
+    <div *ngFor="let famous of famousRiversArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-success text-white">
+          <h2>{{famous.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{famous.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<header class="text-center bg-warning p-3 text-white mt-3">
+    <h2>ancientStructures</h2>
+  </header>
+
+  <div class="row">
+    <div *ngFor="let ancient of ancientStructuresArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-warning text-white">
+          <h2>{{ancient.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{ancient.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<header class="text-center bg-info p-3 text-white mt-3">
+    <h2>boardGames</h2>
+  </header>
+
+  <div class="row">
+    <div *ngFor="let board of boardGamesArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-info text-white">
+          <h2>{{board.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{board.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<header class="text-center bg-dark p-3 text-white mt-3">
+    <h2>musicalInstrumentsWorld</h2>
+  </header>
+
+  <div class="row">
+    <div *ngFor="let music of musicalInstrumentsWorldArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-center bg-dark text-white">
+          <h2>{{music.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{music.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<header class="text-center bg-success p-3 text-white mt-3">
+    <h2>festivalsWorld</h2>
+  </header>
+
+  <div class="row">
+    <div *ngFor="let festive of festivalsWorldArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-white bg-success text-white">
+          <h2>{{festive.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{festive.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<header class="text-center bg-danger p-3 text-white mt-3">
+    <h2>wondersOfNature</h2>
+  </header>
+
+  <div class="row">
+    <div *ngFor="let wonder of wondersOfNatureArr" class="col-md-4 mb-3">
+      <div class="card h-100 mt-3">
+        <div class="card-header text-white bg-danger text-white">
+          <h2>{{wonder.title}}</h2>
+        </div>
+        <div class="card-body">
+          <p>{{wonder.content}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <button class="btn btn-sm bg-primary">Edit</button>
+          <button class="btn btn-sm bg-danger">Remove</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </div>
