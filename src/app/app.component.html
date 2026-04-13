@@ -1,479 +1,809 @@
-
-
 <div class="container mt-5">
-  <header class="text-center bg-info p-3 text-white">
-  <h2>Space Cards</h2>
-</header>
-  <div class="row mt-3">
-    <div *ngFor="let space of spaceArr" class="col-md-4 mb-3">
-      <div class="card h-100">
-        <div class="card-header text-center bg-info text-white">
-          <h2>{{space.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{space.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-  <header class="text-center bg-success p-3 text-white">
-    <h2>world worldCuisinesArr</h2>
-  </header>
-
-
-  <div class="row">
-    <div *ngFor="let world of worldCuisinesArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-success text-white">
-          <h2>{{world.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{world.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-
-
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-  <header class="text-center bg-danger p-3 text-white mt-3">
-    <h2>mountainRanges</h2>
-  </header>
-  <div class="row">
-    <div *ngFor="let mountain of mountainRangesArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-danger text-white">
-          <h2>{{mountain.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{mountain.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-  <header class="text-center bg-dark p-3 text-white mt-3">
-    <h2>famousAuthors</h2>
-  </header>
-  <div class="row">
-    <div *ngFor="let famous of  famousAuthorsArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-dark text-white">
-          <h2>{{famous.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{famous.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-<header class="text-center bg-warning p-3 text-white mt-3">
-    <h2>prehistoricalAnimals</h2>
-  </header>
-  <div class="row">
-    <div *ngFor="let animal of prehistoricAnimalsArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-warning text-white">
-          <h2>{{animal.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{animal.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-<header class="text-center bg-success p-3 text-white mt-3">
-    <h2>famousInventions</h2>
-  </header>
-  <div class="row">
-    <div *ngFor="let famous of famousInventionsArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-success text-white">
-          <h2>{{famous.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{famous.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-    <header class="text-center bg-secondary p-3 text-white mt-3">
-    <h2>moviesGenre</h2>
-  </header>
-  <div class="row">
-    <div *ngFor="let movie of movieGenresArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-secondary text-white">
-          <h2>{{movie.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{movie.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-    <header class="text-center bg-danger p-3 text-white mt-3">
-    <h2>musicalGenres</h2>
-  </header>
-
-  <div class="row">
-    <div *ngFor="let music of musicalGenresArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-danger text-white">
-          <h2>{{music.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{music.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-    <header class="text-center bg-info p-3 text-white mt-3">
-    <h2>techInnovations</h2>
-  </header>
-
-  <div class="row">
-    <div *ngFor="let tech of techInnovationsArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-info text-white">
-          <h2>{{tech.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{tech.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-<header class="text-center bg-success p-3 text-white mt-3">
-    <h2>famousRivers</h2>
-  </header>
-
-  <div class="row">
-    <div *ngFor="let famous of famousRiversArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-success text-white">
-          <h2>{{famous.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{famous.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-<header class="text-center bg-warning p-3 text-white mt-3">
-    <h2>ancientStructures</h2>
-  </header>
-
-  <div class="row">
-    <div *ngFor="let ancient of ancientStructuresArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-warning text-white">
-          <h2>{{ancient.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{ancient.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-<header class="text-center bg-info p-3 text-white mt-3">
-    <h2>boardGames</h2>
-  </header>
-
-  <div class="row">
-    <div *ngFor="let board of boardGamesArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-info text-white">
-          <h2>{{board.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{board.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-<header class="text-center bg-dark p-3 text-white mt-3">
-    <h2>musicalInstrumentsWorld</h2>
-  </header>
-
-  <div class="row">
-    <div *ngFor="let music of musicalInstrumentsWorldArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-center bg-dark text-white">
-          <h2>{{music.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{music.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-<header class="text-center bg-success p-3 text-white mt-3">
-    <h2>festivalsWorld</h2>
-  </header>
-
-  <div class="row">
-    <div *ngFor="let festive of festivalsWorldArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-white bg-success text-white">
-          <h2>{{festive.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{festive.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-<header class="text-center bg-danger p-3 text-white mt-3">
-    <h2>wondersOfNature</h2>
-  </header>
-
-  <div class="row">
-    <div *ngFor="let wonder of wondersOfNatureArr" class="col-md-4 mb-3">
-      <div class="card h-100 mt-3">
-        <div class="card-header text-white bg-danger text-white">
-          <h2>{{wonder.title}}</h2>
-        </div>
-        <div class="card-body">
-          <p>{{wonder.content}}</p>
-        </div>
-        <div class="card-footer d-flex justify-content-between">
-          <button class="btn btn-sm bg-primary">Edit</button>
-          <button class="btn btn-sm bg-danger">Remove</button>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+
+  <table class="table table-bordered">
+    <thead class="text-center text-primary">
+     <tr>
+      <th>Sr.No</th>
+      <th> planetName</th>
+    <th>distanceFromSunKm</th>
+    <th>diameterKm</th>
+    <th>hasRings</th>
+     <th>numberOfMoons</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of plantsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant. planetName}}</td>
+      <td>{{plant.distanceFromSunKm}}</td>
+      <td>{{plant.diameterKm}}</td>
+      <td>{{plant.hasRings}}</td>
+      <td>{{plant.numberOfMoons}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-bordered">
+    <thead class="text-center text-danger">
+     <tr>
+      <th>Sr.No</th>
+       <th>mountainName</th>
+        <th>heightMeters</th>
+        <th>locationContinent</th>
+        <th>firstAscentYear</th>
+       <th>isVolcano</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of mountainsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.mountainName}}</td>
+      <td>{{plant.heightMeters}}</td>
+      <td>{{plant.locationContinent}}</td>
+      <td>{{plant.firstAscentYear}}</td>
+      <td>{{plant.isVolcano}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-success">
+     <tr>
+            <th>Sr.No</th>
+        <th>uniName</th>
+    <th>foundedYear </th>
+    <th>countryLocated</th>
+    <th>studentCount</th>
+    <th>worldRanking</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of universitiesArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.uniName}}</td>
+      <td>{{plant.foundedYear}}</td>
+      <td>{{plant.countryLocated}}</td>
+      <td>{{plant.studentCount}}</td>
+      <td>{{plant.worldRanking}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-info">
+     <tr>
+            <th>Sr.No</th>
+       <th>species</th> 
+     <th>averageWeightKg</th> 
+     <th>habitatType</th> 
+     <th>lifespanYears</th>  
+     <th>endangeredStatus</th> 
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of animalsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.species}}</td>
+      <td>{{plant.averageWeightKg}}</td>
+      <td>{{plant.habitatType}}</td>
+      <td>{{plant.lifespanYears}}</td>
+      <td>{{plant.endangeredStatus}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-warning">
+     <tr>
+            <th>Sr.No</th>
+       <th>appName</th>
+    <th>categoryType</th>
+    <th>downloadsMillion</th>
+    <th>developerCompany</th>
+    <th>subscriptionRequired</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of appsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.appName}}</td>
+      <td>{{plant.categoryType}}</td>
+      <td>{{plant.downloadsMillion}}</td>
+      <td>{{plant.developerCompany}}</td>
+      <td>{{plant.subscriptionRequired}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-primary">
+     <tr>
+            <th>Sr.No</th>
+       <th>continentLabel</th>
+    <th>surfaceAreaMillionSqKm</th>
+    <th>countriesCount</th>
+    <th>populationBillion</th>
+    <th>largestCountry</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of continentsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.continentLabel}}</td>
+      <td>{{plant.surfaceAreaMillionSqKm}}</td>
+      <td>{{plant.countriesCount}}</td>
+      <td>{{plant.populationBillion}}</td>
+      <td>{{plant.largestCountry}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+<table class="table table-bordered">
+    <thead class="text-center text-success">
+     <tr>
+      <th>Sr.No</th>
+     <th>dessertName</th>
+    <th>sugarContentGrams</th>
+    <th>servingTemp</th>
+    <th>mainIngredient</th>
+    <th>calorieCount</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of dessertsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.dessertName}}</td>
+      <td>{{plant.sugarContentGrams}}</td>
+      <td>{{plant.servingTemp}}</td>
+      <td>{{plant.mainIngredient}}</td>
+      <td>{{plant.calorieCount}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-danger">
+     <tr>
+            <th>Sr.No</th>
+    <th> oceanTitle</th>
+    <th>avgDepthMeters</th>
+    <th>surfaceAreaMillionSqKm</th>
+    <th>borderingContinents</th>
+    <th>salinityPpt</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of oceansArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.oceanTitle}}</td>
+      <td>{{plant.avgDepthMeters}}</td>
+      <td>{{plant.surfaceAreaMillionSqKm}}</td>
+      <td>{{plant.borderingContinents}}</td>
+      <td>{{plant.salinityPpt}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-warning">
+     <tr>
+      <th>Sr.No</th>
+   <th>gadgetLabel</th>
+    <th>featuresCount</th>
+    <th>batteryLifeHours</th>
+   <th>connectivityType</th>
+    <th>weightGrams</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of gadgetsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.gadgetLabel}}</td>
+      <td>{{plant.featuresCount}}</td>
+      <td>{{plant.batteryLifeHours}}</td>
+      <td>{{plant.connectivityType}}</td>
+      <td>{{plant.weightGrams}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-secondary">
+     <tr>
+      <th>Sr.No</th>
+      <th>landmarkLabel</th>
+   <th>heightMeters</th>
+    <th>visitorCountYearMillion</th>
+    <th>countryLocation</th>
+    <th>constructionYear</th> 
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of landmarksArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.landmarkLabel}}</td>
+      <td>{{plant.heightMeters}}</td>
+      <td>{{plant.visitorCountYearMillion}}</td>
+      <td>{{plant.countryLocation}}</td>
+      <td>{{plant.constructionYear}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-info">
+     <tr>
+      <th>Sr.No</th>
+      <th>vehicleType</th>
+    <th>maxSpeedKph</th>
+     <th>fuelCapacityLiters</th>
+    <th>wheelCount</th>
+    <th>manufacturerLocation</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of vehiclesModelsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.vehicleType}}</td>
+      <td>{{plant.maxSpeedKph}}</td>
+      <td>{{plant.fuelCapacityLiters}}</td>
+      <td>{{plant.wheelCount}}</td>
+      <td>{{plant.manufacturerLocation}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+<table class="table table-bordered">
+    <thead class="text-center text-warning">
+     <tr>
+      <th>Sr.No</th>
+     <th>professionName</th>
+    <th>avgSalaryUSD</th>
+    <th>yearsOfStudy</th>
+    <th>riskLevel</th>
+    <th>workEnvironment</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of professionsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.professionName}}</td>
+      <td>{{plant.avgSalaryUSD}}</td>
+      <td>{{plant.yearsOfStudy}}</td>
+      <td>{{plant.riskLevel}}</td>
+      <td>{{plant.workEnvironment}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-danger">
+     <tr>
+      <th>Sr.No</th>
+    <th>beverageTitle</th>
+    <th>caffeineMg</th>
+     <th>servingSizeMl</th>
+    <th>servedHot</th>
+    <th>sugarContentG</th>
+    
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of beveragesMenuArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.beverageTitle}}</td>
+      <td>{{plant.caffeineMg}}</td>
+      <td>{{plant.servingSizeMl}}</td>
+      <td>{{plant.servedHot}}</td>
+      <td>{{plant.sugarContentG}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-bordered">
+    <thead class="text-center text-primary">
+     <tr>
+      <th>Sr.No</th>
+   <th>flowerName</th>
+    <th>petalCount</th>
+    <th>fragranceLevel</th>
+    <th>bloomingSeason</th>
+        <th>stemLengthCm</th>
+
+    
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of flowersArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.flowerName}}</td>
+      <td>{{plant.petalCount}}</td>
+      <td>{{plant.fragranceLevel}}</td>
+      <td>{{plant.bloomingSeason}}</td>
+      <td>{{plant.stemLengthCm}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+<table class="table table-bordered">
+    <thead class="text-center text-success">
+     <tr>
+      <th>Sr.No</th>
+       <th>hotelLabel</th>
+       <th> stars</th>
+       <th>totalRooms</th>
+      <th> poolAvailable</th>
+        <th>cityLoc</th>
+
+    
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of hotelsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.hotelLabel}}</td>
+      <td>{{plant.stars}}</td>
+      <td>{{plant.totalRooms}}</td>
+      <td>{{plant.poolAvailable}}</td>
+      <td>{{plant.cityLoc}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-warning">
+     <tr>
+      <th>Sr.No</th>
+    <th>islandLabel</th>
+    <th>areaSqKm</th>
+    <th>countryAdmin</th>
+    <th>inhabited</th>
+    <th>climateType</th>
+
+    
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of islandsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.islandLabel}}</td>
+      <td>{{plant.areaSqKm}}</td>
+      <td>{{plant.countryAdmin}}</td>
+      <td>{{plant.inhabited}}</td>
+      <td>{{plant.climateType}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+<table class="table table-bordered">
+    <thead class="text-center text-primary">
+     <tr>
+      <th>Sr.No</th>
+     <th>insectName</th>
+    <th>wingspanCm</th>
+    <th>legsCount</th>
+    <th>lifespanDays</th>
+    <th>canFly</th>
+
+    
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of insectsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.insectName}}</td>
+      <td>{{plant.wingspanCm}}</td>
+      <td>{{plant.legsCount}}</td>
+      <td>{{plant.lifespanDays}}</td>
+      <td>{{plant.canFly}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-warning">
+     <tr>
+      <th>Sr.No</th>
+    <th>festivalName</th>
+    <th>monthObserved</th>
+    <th>durationDays</th>
+    <th>originCountry</th>
+    <th>outdoorEvent</th>
+
+    
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of festivalsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.festivalName}}</td>
+      <td>{{plant.monthObserved}}</td>
+      <td>{{plant.durationDays}}</td>
+      <td>{{plant.originCountry}}</td>
+      <td>{{plant.outdoorEvent}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-secondary">
+     <tr>
+      <th>Sr.No</th>
+   <th>riverLabel</th>
+    <th>lengthKm</th>
+    <th>flowsThroughCountries</th>
+    <th>avgDepthM</th>
+    <th>deltaExists</th>
+
+    
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of riversArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.riverLabel}}</td>
+      <td>{{plant.lengthKm}}</td>
+      <td>{{plant.flowsThroughCountries}}</td>
+      <td>{{plant.avgDepthM}}</td>
+      <td>{{plant.deltaExists}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-success">
+     <tr>
+      <th>Sr.No</th>
+      <th>spiceName</th>
+    <th>colorHue</th>
+    <th>originRegion</th>
+    <th>pungencyLevel</th>
+    <th>isPowdered</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of spicesArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.spiceName}}</td>
+      <td>{{plant.colorHue}}</td>
+      <td>{{plant.originRegion}}</td>
+      <td>{{plant.pungencyLevel}}</td>
+      <td>{{plant.isPowdered}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+<table class="table table-bordered">
+    <thead class="text-center text-danger">
+     <tr>
+      <th>Sr.No</th>
+     <th>toolName</th>
+    <th>weightKg</th>
+    <th>handleMaterial</th>
+    <th>manualTool</th>
+    <th>usageCategory</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of toolsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.toolName}}</td>
+      <td>{{plant.weightKg}}</td>
+      <td>{{plant.handleMaterial}}</td>
+      <td>{{plant.manualTool}}</td>
+      <td>{{plant.usageCategory}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <table class="table table-bordered">
+    <thead class="text-center text-warning">
+     <tr>
+      <th>Sr.No</th>
+     <th>mineralLabel</th>
+    <th>hardnessMoh</th>
+    <th>crystalSystem</th>
+    <th>isMetallic</th>
+   <th>marketPriceUSDkg</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of mineralsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.mineralLabel}}</td>
+      <td>{{plant.hardnessMoh}}</td>
+      <td>{{plant.crystalSystem}}</td>
+      <td>{{plant.isMetallic}}</td>
+      <td>{{plant.marketPriceUSDkg}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-danger">
+     <tr>
+      <th>Sr.No</th>
+      <th>moonLabel</th>
+    <th>orbitingPlanet</th>
+    <th>diameterKm</th>
+   <th>discoveredYear</th>
+    <th>surfaceMaterial</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of planetsMoonsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.moonLabel}}</td>
+      <td>{{plant.orbitingPlanet}}</td>
+      <td>{{plant.diameterKm}}</td>
+      <td>{{plant.discoveredYear}}</td>
+      <td>{{plant.surfaceMaterial}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+
+<table class="table table-bordered">
+    <thead class="text-center text-info">
+     <tr>
+      <th>Sr.No</th>
+       <th>bandLabel</th>
+    <th>originCity</th>
+    <th>formedYear</th>
+    <th>genreStyle</th>
+    <th>albumsCount</th>
+     <th>Edit</th>
+     <th>Remove</th>
+     </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr *ngFor="let plant of musicalBandsArr; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{plant.bandLabel}}</td>
+      <td>{{plant.originCity}}</td>
+      <td>{{plant.formedYear}}</td>
+      <td>{{plant.genreStyle}}</td>
+      <td>{{plant.albumsCount}}</td>
+      <td>
+        <i class="fa-solid fa-pen-to-square fa-2x text-primary"></i>
+      </td>
+      <td>
+
+        <i class="fa-solid fa-trash fa-2x text-danger"></i>
+      </td>
+    </tr>
+    </tbody>
+  </table>
 
 
 
