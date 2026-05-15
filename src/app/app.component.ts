@@ -15,7 +15,6 @@ import { animals, apps, beveragesMenu, continents, desserts, festivals, flowers,
 export class AppComponent {
   title = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nisi culpa minus inventore similique veniam animi quia delectus nam at?'
 
-
   course={
     title:"Angular Development",
     students:123456789,
